@@ -78,7 +78,7 @@ jobs:
           name: dist
           path: dist
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+        uses: felix-schindler/firebase-action@master
         with:
           args: deploy --only hosting
         env:
@@ -108,7 +108,7 @@ Starting with version v2.1.2 each version release will point to a versioned dock
 
 ```yaml
   name: Deploy to Firebase
-  uses: docker://w9jds/firebase-action:master
+  uses: docker://schindlerfelix/firebase-action:master
   with:
     args: deploy --only hosting
   env:
